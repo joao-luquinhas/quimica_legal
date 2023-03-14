@@ -1,0 +1,15 @@
+body{
+	background-image:url(https://i.pinimg.com/originals/1e/73/59/1e7359e93c175a598624fac46e9e711c.jpg);
+}
+
+#titulo_do_game{
+	font-family: Copperplate Gothic Bold;
+	font-size: 80px;
+	color: #ffffff;
+}
+
+ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}

@@ -1,0 +1,25 @@
+body{
+	background-image:url(https://img.freepik.com/vetores-gratis/fundo-gradiente-de-hidrogenio_23-2150058036.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+}
+
+#texto_principal{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #f3f3f3;
+    text-align: left;
+}
+
+#texto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#texto2{
+    width: 200px;
+    height: 10px;
+}
