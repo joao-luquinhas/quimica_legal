@@ -3,58 +3,256 @@
 <meta charset="UTF-8"/>
 
 <head>
-     <title>Química Legal</title>
+     <title>Tabela Periódica</title>
 	 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 	 <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 </head>
 
 <body>
-<center><h1 id="titulo_do_game">Elementos<h1></center>
-	<br><br><br>
-<ul>
-	<li>
-        <a href ="hidro/index_hidro.html">
-			<img src="img/hidro.png" width="100px" height="100px"/>
-		 </a>
-	</li>
-	
-	
-	<li>
-        <a href ="hidro/index_hidro.html">
-			<img src="img/hidro.png" width="100px" height="100px"/>
-		 </a>
-	</li>
-	
-	
-	<li>
-		<a href ="hidro/index_hidro.html">
-			<img src="img/hidro.png" width="100px" height="100px"/>
-		 </a>
-	</li>
-</ul>
-	
-<br><br>
-	
-	alterei
 
-<button id="roda">Calcular</button>
+	<div class="tbl_periodica">
+		<div class="coluna">
+			<button class="elemento" onclick="H()" id="n_metal">H</button>
+			<button class="elemento" onclick="Li()" id="alcalino">Li</button>
+			<button class="elemento" onclick="Na()" id="alcalino">Na</button>
+			<button class="elemento" onclick="K()" id="alcalino">K</button>
+			<button class="elemento" onclick="Rb()" id="alcalino">Rb</button>
+			<button class="elemento" onclick="Cs()" id="alcalino">Cs</button>
+			<button class="elemento" onclick="Fr()" id="alcalino">Fr</button>
+		</div>
+
+		<div class="coluna_m">
+			<button class="elemento" onclick="Be()" id="terroso">Be</button>
+			<button class="elemento" onclick="Mg()" id="terroso">Mg</button>
+			<button class="elemento" onclick="Ca()" id="terroso">Ca</button>
+			<button class="elemento" onclick="Sr()" id="terroso">Sr</button>
+			<button class="elemento" onclick="Ba()" id="terroso">Ba</button>
+			<button class="elemento" onclick="Ra()" id="terroso">Ra</button>
+		</div>
 
 
+		
+		<div class="coluna_p">
+			<div class="tbl_elementos">
+				<table>
+					<tr><td colspan="4" id="titulo">Elemento</td></tr>
+					<tr><td colspan="2" rowspan="4" id="simbolo_g" class="tbl_restante"> ? </td>  <td id="simbolo_m" class="tbl_restante">Símbolo:</td>  <td class="tbl_restante" id="simbolo_result">?</td></tr>
+					<tr><td class="tbl_restante" id="num_at"> Número Atômico: </td>  <td class="tbl_restante" id="num_at_result"> ? </td></tr>
+					<tr><td class="tbl_restante" id="mas_g"> Massa Atômica: </td>  <td class="tbl_restante" id="mas_p">?</td></tr>
+					<tr> <td class="tbl_restante" id="config">Configuração Eletrônica:</td><td class="tbl_restante" id="config_result">?</td></tr>
+				</table>
+			</div>
+
+			<button class="elemento" onclick="Sc()" id="metal">Sc</button>
+			<button class="elemento" onclick="Y()" id="metal">Y</button>
+			<button class="elemento" id="especial">57</button>
+			<button class="elemento" id="especial">89</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" id="especial">57:</button>
+				<button class="elemento" id="especial">89:</button>
+			</div>
+		</div>
+		
+		<div class="coluna_p">
+			<button class="elemento" onclick="Ti()"  id="metal">Ti</button>
+			<button class="elemento" onclick="Zr()" id="metal">Zr</button>
+			<button class="elemento" onclick="Hf()" id="metal">Hf</button>
+			<button class="elemento" onclick="Rf()" id="metal">Rf</button>
+			
+			<div class="coluna_pp">
+				<button class="elemento" onclick="La()" id="lantanidio">La</button>
+				<button class="elemento" onclick="Ac()" id="actinidio">Ac</button>
+			</div>
+		</div>
+
+		<div class="coluna_p">
+			<button class="elemento" onclick="V()" id="metal">V</button>
+			<button class="elemento" onclick="Nb()" id="metal">Nb</button>
+			<button class="elemento" onclick="Ta()" id="metal">Ta</button>
+			<button class="elemento" onclick="Db()" id="metal">Db</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Ce()" id="lantanidio">Ce</button>
+				<button class="elemento" onclick="Th()" id="actinidio">Th</button>
+			</div>
+		</div>
+
+		<div class="coluna_p">
+			<button class="elemento" onclick="Cr()" id="metal">Cr</button>
+			<button class="elemento" onclick="Mo()" id="metal">Mo</button>
+			<button class="elemento" onclick="W()" id="metal">W</button>
+			<button class="elemento" onclick="Sg()" id="metal">Sg</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Pr()" id="lantanidio">Pr</button>
+				<button class="elemento" onclick="Pa()" id="actinidio">Pa</button>
+			</div>
+		</div>
+
+		<div class="coluna_p">
+			<button class="elemento" onclick="Mn()" id="metal">Mn</button>
+			<button class="elemento" onclick="Tc()" id="metal">Tc</button>
+			<button class="elemento" onclick="Re()" id="metal">Re</button>
+			<button class="elemento" onclick="Bh()" id="metal">Bh</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Nd()" id="lantanidio">Nd</button>
+				<button class="elemento" onclick="U()" id="actinidio">U</button>
+			</div>
+		</div>
+
+		<div class="coluna_p">
+			<button class="elemento" onclick="Fe()" id="metal">Fe</button>
+			<button class="elemento" onclick="Ru()" id="metal">Ru</button>
+			<button class="elemento" onclick="Os()" id="metal">Os</button>
+			<button class="elemento" onclick="Hs()" id="metal">Hs</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Pm()" id="lantanidio">Pm</button>
+				<button class="elemento" onclick="Np()" id="actinidio">Np</button>
+			</div>
+		</div>
+
+		<div class="coluna_p">
+			<button class="elemento" onclick="Co()" id="metal">Co</button>
+			<button class="elemento" onclick="Rh()" id="metal">Rh</button>
+			<button class="elemento" onclick="Ir()" id="metal">Ir</button>
+			<button class="elemento" onclick="Mt()" id="metal">Mt</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Sm()" id="lantanidio">Sm</button>
+				<button class="elemento" onclick="Np()" id="actinidio">Np</button>
+			</div>
+		</div>
+
+		<div class="coluna_p">
+			<button class="elemento" onclick="Ni()" id="metal">Ni</button>
+			<button class="elemento" onclick="Pd()" id="metal">Pd</button>
+			<button class="elemento" onclick="Pt()" id="metal">Pt</button>
+			<button class="elemento" onclick="Ds()" id="metal">Ds</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Eu()" id="lantanidio">Eu</button>
+				<button class="elemento" onclick="Am()" id="actinidio">Am</button>
+			</div>
+		</div>
+
+		<div class="coluna_p">
+			<button class="elemento" onclick="Cu()" id="metal">Cu</button>
+			<button class="elemento" onclick="Ag()" id="metal">Ag</button>
+			<button class="elemento" onclick="Au()" id="metal">Au</button>
+			<button class="elemento" onclick="Rg()" id="metal">Rg</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Gd()" id="lantanidio">Gd</button>
+				<button class="elemento" onclick="Cm()" id="actinidio">Cm</button>
+			</div>
+		</div>
+
+		<div class="coluna_p">
+			<button class="elemento" onclick="Zn()" id="metal">Zn</button>
+			<button class="elemento" onclick="Cd()" id="metal">Cd</button>
+			<button class="elemento" onclick="Hg()" id="metal">Hg</button>
+			<button class="elemento" onclick="Cn()" id="metal">Cn</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Tb()" id="lantanidio">Tb</button>
+				<button class="elemento" onclick="Bk()" id="actinidio">Bk</button>
+			</div>
+		</div>
 
 
 
 
+		<div class="coluna_m">
+			<button class="elemento" onclick="B()" id="semimetal">B</button>
+			<button class="elemento" onclick="Al()" id="outro_m">Al</button>
+			<button class="elemento" onclick="Ga()" id="outro_m">Ga</button>
+			<button class="elemento" onclick="In()" id="outro_m">In</button>
+			<button class="elemento" onclick="Tl()" id="outro_m">Tl</button>
+			<button class="elemento" onclick="Nh()" id="outro_m">Nh</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Dy()" id="lantanidio">Dy</button>
+				<button class="elemento" onclick="Cf()" id="actinidio">Cf</button>
+			</div>
+		</div>
+
+		<div class="coluna_m">
+			<button class="elemento" onclick="C()" id="n_metal">C</button>
+			<button class="elemento" onclick="Si()" id="semimetal">Si</button>
+			<button class="elemento" onclick="Ge()" id="semimetal">Ge</button>
+			<button class="elemento" onclick="Sn()" id="outro_m">Sn</button>
+			<button class="elemento" onclick="Pb()" id="outro_m">Pb</button>
+			<button class="elemento" onclick="Fl()" id="outro_m">Fl</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Ho()" id="lantanidio">Ho</button>
+				<button class="elemento" onclick="Es()" id="actinidio">Es</button>
+			</div>
+		</div>
+
+		<div class="coluna_m">
+			<button class="elemento" onclick="N()" id="n_metal">N</button>
+			<button class="elemento" onclick="P()" id="n_metal">P</button>
+			<button class="elemento" onclick="As()" id="semimetal">As</button>
+			<button class="elemento" onclick="Sb()" id="semimetal">Sb</button>
+			<button class="elemento" onclick="Bi()" id="outro_m">Bi</button>
+			<button class="elemento" onclick="Mc()" id="outro_m">Mc</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="H()" id="lantanidio">Er</button>
+				<button class="elemento" onclick="Fm()" id="actinidio">Fm</button>
+			</div>
+		</div>
+
+		<div class="coluna_m">
+			<button class="elemento" onclick="O()" id="n_metal">O</button>
+			<button class="elemento" onclick="S()" id="n_metal">S</button>
+			<button class="elemento" onclick="Se()" id="n_metal">Se</button>
+			<button class="elemento" onclick="Te()" id="semimetal">Te</button>
+			<button class="elemento" onclick="Po()" id="semimetal">Po</button>
+			<button class="elemento" onclick="Lv()" id="outro_m">Lv</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Tm()" id="lantanidio">Tm</button>
+				<button class="elemento" onclick="Md()" id="actinidio">Md</button>
+			</div>
+		</div>
+
+		<div class="coluna_m">
+			<button class="elemento" onclick="F()" id="halogenio">F</button>
+			<button class="elemento" onclick="Cl()" id="halogenio">Cl</button>
+			<button class="elemento" onclick="Br()" id="halogenio">Br</button>
+			<button class="elemento" onclick="I()" id="halogenio">I</button>
+			<button class="elemento" onclick="At()" id="halogenio">At</button>
+			<button class="elemento" onclick="Ts()" id="halogenio">Ts</button>
+
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Yb()" id="lantanidio">Yb</button>
+				<button class="elemento" onclick="No()" id="actinidio">No</button>
+			</div>
+		</div>
 
 
 
+		<div class="coluna">
+			<button class="elemento" onclick="He()" id="nobre">He</button>
+			<button class="elemento" onclick="Ne()" id="nobre">Ne</button>
+			<button class="elemento" onclick="Ar()" id="nobre">Ar</button>
+			<button class="elemento" onclick="Kr()" id="nobre">Kr</button>
+			<button class="elemento" onclick="Xe()" id="nobre">Xe</button>
+			<button class="elemento" onclick="Rn()" id="nobre">Rn</button>
+			<button class="elemento" onclick="Og()" id="nobre">Og</button>
 
+			<div class="coluna_pp">
+				<button class="elemento" onclick="Lu()" id="lantanidio">Lu</button>
+				<button class="elemento" onclick="Lr()" id="actinidio">Lr</button>
+			</div>
+		</div>
+	</div>
 
-
-
-
-
-
-
-<script src="form.js"></script>
+<script src="js/form.js"></script>
 </body>
 </html>

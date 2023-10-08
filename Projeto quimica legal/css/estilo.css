@@ -1,15 +1,152 @@
+*{
+	margin: 0%;
+	padding: 0%;
+}
+
 body{
-	background-image:url(https://i.pinimg.com/originals/1e/73/59/1e7359e93c175a598624fac46e9e711c.jpg);
+	background-image:url(https://img.freepik.com/vetores-premium/textura-futurista-de-techno-de-ferro-escuro-de-vetor-sem-costura-linha-de-energia-de-eletron-abstrato-dourado-em-escovado_167184-450.jpg);
+	background-size: 50%;
 }
 
-#titulo_do_game{
-	font-family: Copperplate Gothic Bold;
-	font-size: 80px;
-	color: #ffffff;
+
+
+.tbl_elementos{
+	position: absolute; 
+	top: 8px; 
+	left: 175px;
+	border-radius: 5px;
+	background-color: #bdbdbd;
+	color:rgb(0, 0, 0);
 }
 
-ul{
-	list-style: none;
+
+#titulo{
+	font-size: 40px;
+	font-family:Helvetica Neue;
+}
+
+#simbolo_g{
+	text-align: center;
+	padding: 50px;
+	font-size: 35px;
+}
+
+.tbl_restante{
+	font-size: 20px;
+	padding-left: 15px;
+	padding-right: 25px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-family: verdana;
+}
+
+
+
+
+.tbl_periodica{
+	margin-left: 35px;
+	margin-right: 25px;
+	margin-top: 15px;
 	display: flex;
-	justify-content: space-around;
 }
+
+.coluna{
+	display: flex;
+	flex-direction: column;
+	padding: 1px;	
+}
+
+.coluna_m{
+	display: flex;
+	flex-direction: column;
+	padding: 1px;
+	margin-top: 64px;
+}
+
+.coluna_p{
+	display: flex;
+	flex-direction: column;
+	padding: 1px;
+	margin-top: 192px;
+}
+
+.coluna_pp{
+	display: flex;
+	flex-direction: column;
+	padding-top: 28px;
+}
+
+
+
+
+
+
+.elemento{
+	padding: 17px;
+	font-size: 22px;
+	font-family: Helvetica Neue;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#n_metal{
+	background-color: #8BC34A;
+}
+
+#alcalino{
+	background-color: #FFA500;
+}
+
+#terroso{
+	background-color: #FFFF99;
+}
+
+#metal{
+	background-color: #FF9999;
+}
+
+#outro_m{
+	background-color: #CCCCCC;
+}
+
+#semimetal{
+	background-color: #4DB6AC;
+}
+
+#halogenio{
+	background-color: #87CEEB;
+}
+
+#nobre{
+	background-color: #1E90FF;
+}
+
+#lantanidio{
+	background-color: #7B68EE;
+}
+
+#actinidio{
+	background-color: #B0E0E6;
+}
+
+#especial{
+	background-color: black;
+	color:white;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.num{
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	padding-left: 32px;
+	padding-top: 18px; 
+  }
